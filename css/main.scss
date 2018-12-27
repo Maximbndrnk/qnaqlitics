@@ -90,6 +90,7 @@ body {
   font-size: 60px;
   text-align: center;
   margin: 0;
+  line-height: 75px;
 }
 
 .secondary-header-text {
@@ -151,9 +152,10 @@ body {
   border: none;
   outline: none;
   height: $input-height;
+  padding-left: 19px;
 
   &::placeholder {
-    padding-left: 10px;
+    //padding-left: 19px;
     color: $main-text-color;
   }
 }
@@ -183,7 +185,7 @@ body {
   .transparent-background-image {
     position: absolute;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.25;
     width: 100%;
     max-width: 300%;
     max-height: 300%;
@@ -201,6 +203,8 @@ p.bi {
 p.column-text {
   font-size: 16px;
   text-align: left;
+  line-height: 26px;
+  letter-spacing: 0.48px;
 }
 
 .pc-container {
@@ -223,6 +227,7 @@ p.column-text {
   font-size: 36px;
   color: white;
   margin: 0;
+  line-height: 46px;
 }
 
 .footer-container {
@@ -231,4 +236,8 @@ p.column-text {
   .phone {
     color: white;
   }
+}
+
+.part-container.main-screen.big-padding {
+  padding: 203px 0 213px 0;
 }

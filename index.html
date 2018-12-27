@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/adaptive.css"/>
-    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -28,7 +27,7 @@
 </div>
 
 <div class="row-container gray-background">
-    <div class="part-container main-screen">
+    <div class="part-container main-screen big-padding">
         <p class="main-header-text">Implementation</p>
         <p class="main-header-text">of Business Intelligence Systems</p>
         <p class="secondary-header-text mt-10">Irreplaceable tool for business management and</p>
@@ -43,11 +42,11 @@
             </p>
             <form>
                 <div class="inputs-container ">
-                    <input type="text" class="custom-input" id="name" placeholder="Name">
-                    <input type="text" class="custom-input" id="email" placeholder="Phone or email">
+                    <input type="text" class="custom-input" id="name-input-1" placeholder="Name">
+                    <input type="text" class="custom-input" id="email-input-1" placeholder="Phone or email">
 
                     <div class="btn-container">
-                        <button class="submit-btn">Submit</button>
+                        <button type="button" class="submit-btn" id="submit-btn-1">Submit</button>
                         <p class="privacy-p">
                             I agree with the Privacy Policy
                         </p>
@@ -110,7 +109,7 @@
         <p class="bi col-xs-12 mb-0">Qnalytics successfully implements projects</p>
         <p class="bi col-xs-12">based on two BI-system</p>
         <div class="row">
-            <div class="col-xs-12 col-lg-4 pc-container">
+            <div class="col-xs-12 col-lg-3 pc-container">
                 <p class="qv-header">QlikView</p>
                 <img src="assets/QV.jpg" alt="" class="pc">
             </div>
@@ -127,7 +126,7 @@
                     shorter time to value, and more insight across the organization.
                 </p>
             </div>
-            <div class="col-xs-12 offset-lg-1 col-lg-3">
+            <div class="col-xs-12 col-lg-4">
                 <p class="column-text">QlikView takes interactive data discovery to
                     a whole new level by enabling unrestricted exploration and search for users,
                     offering collaboration and mobility for groups and teams, and supporting
@@ -142,17 +141,18 @@
 <div class="row-container">
     <div class="part-container main-screen">
         <div class="row">
-            <div class="col-xs-12 col-lg-4 pc-container">
+            <div class="col-xs-12 col-lg-3 pc-container">
                 <p class="qv-header">Qlik Sense</p>
                 <img src="assets/QS.jpg" alt="" class="pc">
             </div>
             <div class="col-xs-12 col-lg-4">
                 <p class="column-text">With the Associative engine at its core, and new augmented intelligence
                     capabilities supporting the user, Qlik Sense helps anyone discover insights that query-based BI
-                    tools simply miss, driving data literacy for all skill levels. Freely search and explore across all
+                    tools simply miss, driving data literacy for all skill levels.</p>
+                <p class="column-text"> Freely search and explore across all
                     your data, instantly pivoting your analysis when new ideas surface.</p>
             </div>
-            <div class="col-xs-12 offset-lg-1 col-lg-3">
+            <div class="col-xs-12 col-lg-4">
                 <p class="column-text">Take advantage of machine suggestions and automation
                     powered by the Qlik cognitive engine. And get total flexibility
                     with a multi-cloud data analytics platform that supports the full
@@ -176,11 +176,11 @@
             </p>
             <form>
                 <div class="inputs-container ">
-                    <input type="text" class="custom-input" id="name" placeholder="Name">
-                    <input type="text" class="custom-input" id="email" placeholder="Phone or email">
+                    <input type="text" class="custom-input" id="name-input-2" placeholder="Name">
+                    <input type="text" class="custom-input" id="email-input-2" placeholder="Phone or email">
 
                     <div class="btn-container">
-                        <button class="submit-btn">Submit</button>
+                        <button type="button" class="submit-btn" id="submit-btn-2">Submit</button>
                         <p class="privacy-p">
                             I agree with the Privacy Policy
                         </p>
@@ -204,5 +204,7 @@
         </div>
     </div>
 </div>
+<script src="js/main.js"></script>
+
 </body>
 </html>

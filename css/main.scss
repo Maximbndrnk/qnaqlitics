@@ -51,11 +51,11 @@ body {
   height: 170px;
   display: flex;
   align-items: center;
+}
 
-  .logo-img {
-    height: 100px;
-    width: 134px;
-  }
+.logo-img {
+  height: 100px;
+  width: 134px;
 }
 
 .phone-container {
@@ -87,20 +87,21 @@ body {
 }
 
 .main-header-text {
-  font-size: 60px;
+  font-size: 60pt;
   text-align: center;
   margin: 0;
-  line-height: 75px;
+  line-height: 70pt;
 }
 
 .secondary-header-text {
-  font-size: 28px;
+  font-size: 28pt;
   text-align: center;
   margin: 0;
+  line-height: 35pt;
 }
 
-.mt-10 {
-  margin-top: 10px;
+.mt-55 {
+  margin-top: 47px;
 }
 
 .mb-0 {
@@ -115,7 +116,7 @@ body {
   background-color: $form-background-color;
   width: 629px;
   border-radius: 3px;
-  margin-top: 35px;
+  margin-top: 66px;
 
   .margin-t-b-20 {
     margin: 20px 0 0 0;
@@ -190,7 +191,7 @@ body {
     max-width: 300%;
     max-height: 300%;
     left: 50%;
-    top: 65%;
+    top: 40%;
     transform: translate(-50%, -50%);
   }
 }
@@ -198,6 +199,7 @@ body {
 p.bi {
   font-size: 36px;
   margin: 0 0 50px 0;
+  line-height: 46pt;
 }
 
 p.column-text {
@@ -239,7 +241,7 @@ p.column-text {
 }
 
 .part-container.main-screen.big-padding {
-  padding: 203px 0 213px 0;
+  padding: 194px 0 213px 0;
 }
 
 

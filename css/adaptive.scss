@@ -58,6 +58,15 @@
 
   }
 
+  .inputs-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .inputs-container .custom-input {
+    margin: 0 0 10px 0;
+  }
+
 
 }
 

@@ -1,73 +1,70 @@
-@media screen and (min-width: 100px) and (max-width: 1200px) {
-  .part-container {
+@media screen and (min-width: 1200px) {
+  .before-940-none {
+    display: none;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 768px) {
-
-  .main-header-text {
-    font-size: 40px;
-  }
-
-  .secondary-header-text {
-    font-size: 22px;
-  }
-
-  .phone-container {
-    display: flex;
-    justify-content: center;
-  }
-  .logo-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .form-container {
-    width: 90%;
-  }
-
-  .inputs-container {
-    flex-direction: column;
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .before-940-none {
+    display: none;
     width: 100%;
-    align-items: center;
+  }
+  .row-container.image-background.main-screen.container-fluid {
+    width: 100%;
 
-    .custom-input {
-      margin: 0 0 10px 0;
+    .part-container {
+      max-width: 100%;
     }
   }
-
-  .image-background.main-screen {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .transparent-background-image {
-      height: 100%;
-      left: 0 ;
-      top: 0;
-      transform: translate(0, 0) ;
-    }
-  }
-
-  .column-text {
-     margin: 0;
-  }
-
-
 }
 
 @media screen and (min-width: 100px) and (max-width: 992px) {
-  .image-background.main-screen {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .transparent-background-image {
-      height: 100%;
-      left: 0 ;
-      top: 0;
-      transform: translate(0, 0) ;
-    }
+  .part-container {
+    width: 100%;
   }
 
-  .column-text {
-    margin: 0;
+  .main-header-text {
+    max-width: 700px;
+  }
+
+  .form-container {
+    margin-top: 55px;
+    padding: 53px 0 42px 0;
+  }
+  .part-container.main-screen.big-padding {
+    padding: 170px 0;
+  }
+
+  .transparent-background-image {
+    height: 150%;
+    width: 150% !important;
+    top: 51%;
+  }
+  .till-940-none {
+    display: none;
+  }
+
+  .form-container.second-form {
+    padding: 80px 0 65px 0;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .phone-container, .logo-container {
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+}
+
+@media screen and (max-width: 772px) {
+  .form-container,.form-container.second-form {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }

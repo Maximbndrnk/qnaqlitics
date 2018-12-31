@@ -18,6 +18,12 @@ function handleFirstForm() {
     name = nameInput.value;
     contact = contactInput.value;
 
+    if (validateForm(name, contact)) {
+        nameInput.value = '';
+        contactInput.value = '';
+        return;
+    }
+
     let dataString =
         'name=' + name +
         '&contact=' + contact;
@@ -41,6 +47,12 @@ function handleSecondForm() {
     contactInput = document.querySelector('#email-input-2');
     name = nameInput.value;
     contact = contactInput.value;
+
+    if (validateForm(name, contact)) {
+        nameInput.value = '';
+        contactInput.value = '';
+        return;
+    }
     
     let dataString =
         'name=' + name +
@@ -56,4 +68,11 @@ function handleSecondForm() {
         contactInput.value = '';
     };
     xhr.send(dataString);
+}
+
+function validateForm(name, contact){
+    if(name.length == 0 || contact.length == 0) {
+        return true;
+    }
+    return false;
 }

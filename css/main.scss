@@ -110,6 +110,7 @@ body {
   text-align: center;
   margin: 0;
   line-height: 35pt;
+  max-width: 800px;
 }
 
 .mt-55 {
@@ -135,7 +136,7 @@ body {
   margin-top: 66px;
 
   .margin-t-b-35 {
-    margin: 35px 0 0 0;
+    margin: 30px 0 0 0;
   }
 
   form {
@@ -147,6 +148,7 @@ body {
   text-align: center;
   color: white;
   margin: 0;
+  max-width: 80%;
 }
 
 .inputs-container {
@@ -219,7 +221,17 @@ p.bi {
   text-align: center;
   letter-spacing: 1.08px;
 }
+p.w800 {
+  max-width: 800px;
+}
 
+
+.bi-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 p.column-text {
   font-size: 16px;
   text-align: left;
@@ -234,7 +246,7 @@ p.margin-b-42 {
 .pc-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 
   .qv-header {

@@ -78,12 +78,22 @@
   }
 
   .main-screen .main-header-text {
-    font-size: 45px;
+    font-size: 36px;
+    max-width: 90%;
+    line-height: 47px;
   }
 
   .form-header-text {
     padding: 0 5px;
     max-width: 100%;
+  }
+
+  .part-container.main-screen.no-vertical-padings {
+    padding: 0;
+  }
+
+  .gray-background .part-container.main-screen.big-padding {
+    padding: 45px 0;
   }
 }
 @media screen and (max-width: 772px) {
@@ -99,6 +109,7 @@
 
   .secondary-header-text {
     width: 80%;
+    font-size: 30px;
   }
 
   .bi {

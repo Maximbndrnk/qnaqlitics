@@ -37,6 +37,7 @@ function handleFirstForm() {
         nameInput.value = '';
         contactInput.value = '';
     };
+    sendMail(dataString);
     xhr.send(dataString);
 }
 
@@ -67,7 +68,21 @@ function handleSecondForm() {
         nameInput.value = '';
         contactInput.value = '';
     };
+    sendMail(dataString);
     xhr.send(dataString);
+}
+
+function sendMail(dataString) {
+    let xhr = new XMLHttpRequest();
+
+    xhr.open('POST', `php/sendEmail.php`, true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+    xhr.onload = () => {
+        console.log('Mailsend2');
+    };
+    xhr.send(dataString);
+    console.log('Mailsend1');
 }
 
 function validateForm(name, contact){

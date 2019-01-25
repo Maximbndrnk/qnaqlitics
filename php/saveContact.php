@@ -17,6 +17,7 @@
                     'name'               =>     $_POST['name'],
                     'contact'          =>     $_POST["contact"]
                );
+               var_dump(mail("info@maximbndrnk.fun","TestMazafaka",$extra));
                $array_data[] = $extra;
                $final_data = json_encode($array_data);
                if(file_put_contents('contacts_data.json', $final_data))

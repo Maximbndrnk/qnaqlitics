@@ -1,7 +1,7 @@
 <?php
 
-    $subject = "New contact from Qnalitics";
+    $subject = "New contact from Qnalytics";
     $text = "Name: " . $_POST["name"] . ", contact data: " . $_POST["contact"];
-    mail("korsikov@rbcgrp.com", $subject, $text);
+    mail("ste.janke@gmail.com", $subject, $text);
 
 ?>

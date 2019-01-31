@@ -35,10 +35,12 @@
     padding: 170px 0;
   }
 
-  .transparent-background-image {
-    height: 150%;
-    width: 150% !important;
+  .image-background .transparent-background-image {
+    height: 110%;
+    width: unset !important;
     top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .till-940-none {
